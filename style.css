@@ -1,0 +1,104 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background:#eee;
+}
+
+.container {
+  max-width:1024px;
+  margin:0 auto;
+}
+
+.accordion {
+  width:100%;
+  max-width:400px;
+  margin:0 auto;
+  margin-top:70px;
+}
+
+.button {
+  width:100%;
+  padding:8px 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border:none;
+  border-bottom:4px solid #c0392b;
+  background:#23cc71;
+  outline:0;
+  font-family:'Helvetica Neue', Helvetica, sans-serif;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.button .fa-caret-down {
+  margin-left:2px;
+}
+
+.list-item {
+  visibility:visible;
+  opacity:1;
+  height:100%;
+  margin-top:7px;
+  margin-bottom:5px;
+  /*color:#fff;*/
+  -webkit-transition: visibility, opacity, height, margin-top .3s;
+     -moz-transition: visibility, opacity, height, margin-top .3s;
+      -ms-transition: visibility, opacity, height, margin-top .3s;
+       -o-transition: visibility, opacity, height, margin-top .3s;
+          transition: visibility, opacity, height, margin-top .3s;
+}
+.list-item.hide {
+  margin-top:0;
+  margin-bottom:0;
+  visibility:hidden;
+  opacity:0;
+  height:0;
+}
